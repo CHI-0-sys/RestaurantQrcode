@@ -9,7 +9,7 @@ const QRDemo = ({ onScan }) => {
     // Generate QR code when component mounts
     const generateQR = async () => {
       try {
-        await QRCode.toCanvas(canvasRef.current, 'https://your-restaurant.com/menu', {
+        await QRCode.toCanvas(canvasRef.current, 'https://restaurand.netlify.app/', {
           width: 192,
           margin: 2,
           color: {
